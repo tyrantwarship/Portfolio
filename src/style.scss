@@ -1,0 +1,67 @@
+$navbar-background-color: #3f1911;
+
+body {
+  background: #444;
+}
+
+.landing-page-curtain {
+  position: relative;
+  height: 100%;
+  background: url("../assets/hue-coffee-code.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  filter: blur(5px);
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  color: #FFFFFF;
+}
+
+.header-title h1 {
+  background: black;
+}
+
+.quick-contact-form {
+  position: absolute;
+  bottom: 0;
+}
+
+.content {
+  height: 100%;
+  background-image: url("../assets/code-820275.jpg");
+  background-attachment: fixed;
+}
+
+ul.navbar-nav li a {
+  color: white;
+}
+
+ul.navbar-nav li a:hover {
+  background-color: transparent;
+}
+
+nav {
+  transition: all 1s;
+}
+
+.navbar-background-color {
+  background-color: $navbar-background-color;
+  //border: 1px solid white;
+}
+
+.navbar-header button span.icon-bar {
+  background-color: white;
+}
+
+.menu-top-option {
+  color: white;
+  &:focus, &:hover {
+    color: white;
+  }
+}

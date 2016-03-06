@@ -1,4 +1,5 @@
 $navbar-background-color: #3f1911;
+$quick-contact-box-shadow-size: 2px;
 
 body {
   background: #444;
@@ -29,6 +30,8 @@ body {
   height: 400px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, .5);
+  border: black solid 1px;
+  box-shadow: $quick-contact-box-shadow-size $quick-contact-box-shadow-size black inset,  $quick-contact-box-shadow-size*-1 $quick-contact-box-shadow-size*-1 black inset
 }
 
 .header-title {

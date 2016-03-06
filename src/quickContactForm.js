@@ -3,31 +3,26 @@ import React from "react";
 var QuickContactForm = React.createClass({
   render() {
     return (
-      <form className="form-horizontal">
+      <form className="form-horizontal quick-contact-form">
         <div className="form-group">
-          <label for="inputEmail3" className="col-sm-2 control-label">Email</label>
-          <div className="col-sm-10">
-            <input type="email" className="form-control" id="inputEmail3" placeholder="Email" />
+          <label for="inputName" className="col-sm-offset-1 col-sm-2 control-label">Name</label>
+          <div className="col-sm-7">
+            <input type="text" className="form-control" id="inputName" placeholder="John Doe" />
           </div>
         </div>
         <div className="form-group">
-          <label for="inputPassword3" className="col-sm-2 control-label">Password</label>
-          <div className="col-sm-10">
-            <input type="password" className="form-control" id="inputPassword3" placeholder="Password" />
+          <label for="inputEmail" className="col-sm-offset-1 col-sm-2 control-label">E-Mail</label>
+          <div className="col-sm-7">
+            <input type="email" className="form-control" id="inputEmail" placeholder="Which Email Can I get back to you at?" />
           </div>
         </div>
         <div className="form-group">
-          <div className="col-sm-offset-2 col-sm-10">
-            <div className="checkbox">
-              <label>
-                <input type="checkbox" /> Remember me
-              </label>
-            </div>
-          </div>
-        </div>
-        <div className="form-group">
-          <div className="col-sm-offset-2 col-sm-10">
-            <button type="submit" className="btn btn-default">Sign in</button>
+          <label for="inputPurpose" className="col-sm-offset-1 col-sm-2 control-label">Purpose</label>
+          <div className="col-sm-7">
+            {/* <input type="text" className="form-control" id="inputPurpose" placeholder="Is there a project you have in mind?" /> */}
+            <textarea className="form-control" id="inputPurpose" name="message" rows="5" cols="45">
+              Is there a project you have in mind?
+            </textarea>
           </div>
         </div>
       </form>

@@ -42,8 +42,11 @@ body {
 }
 
 .quick-contact-form {
-  position: absolute;
-  bottom: 0;
+  margin: 40px auto;
+  & .form-group label {
+    text-align: left;
+    padding-left: 25px;
+  }
 }
 
 .content {

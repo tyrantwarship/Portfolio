@@ -47,7 +47,6 @@ var QuickContact = React.createClass({
       <div className="quick-contact-container">
         <div className="quick-contact-box">
           <Header />
-          {/* <div className="quick-contact-form">Web and Mobile Developer</div> */}
           <QuickContactForm />
         </div>
       </div>

@@ -23,7 +23,6 @@ var LandingPage = React.createClass({
       <header className="">
         <div className="landing-page-curtain img-responsive"></div>
         <NavBar />
-        <Header />
         <QuickContact />
       </header>
     );
@@ -43,7 +42,12 @@ var Header = React.createClass({
 var QuickContact = React.createClass({
   render() {
     return (
-      <div className="quick-contact-form">Web and Mobile Developer</div>
+      <div className="quick-contact-container">
+        <div className="quick-contact-box">
+          <Header />
+          <div className="quick-contact-form">Web and Mobile Developer</div>
+        </div>
+      </div>
     );
   }
 });

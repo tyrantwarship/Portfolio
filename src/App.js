@@ -2,6 +2,7 @@
 import React from "react";
 import NavBar from "./navbar";
 import QuickContactForm from "./quickContactForm.js";
+import AboutMe from "./aboutme.js";
 require("bootstrap");
 require("bootstrap-webpack");
 require("./style.scss");

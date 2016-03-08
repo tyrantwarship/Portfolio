@@ -113,4 +113,25 @@ nav {
 
 .about-me-paragraph {
   margin-top: 20px;
+  &:last-child {
+    margin-bottom: 120px;
+  }
 }
+
+.skillset-area {
+  background-color: #847563; 
+  padding-top: 80px;
+  padding-bottom: 80px;
+  & h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.badges-list li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &:nth-child(5n){
+    margin-right: 50px;
+  }
+}
+

@@ -3,6 +3,7 @@ import React from "react";
 import NavBar from "./navbar";
 import QuickContactForm from "./quickContactForm.js";
 import AboutMe from "./aboutme.js";
+import SkillSet from "./skillset.js";
 require("bootstrap");
 require("bootstrap-webpack");
 require("./style.scss");
@@ -61,7 +62,7 @@ var Content = React.createClass({
     return (
       <div className="content container">
         <AboutMe />
-        {/* <Skillset /> */}
+        <SkillSet />
         {/* <PreviousWork /> */}
         {/* <ContactMe /> */}
       </div>

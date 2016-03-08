@@ -12,6 +12,7 @@ var App = React.createClass({
   render() {
     return (
       <div>
+        <NavBar />
         <LandingPage />
         <Content />
       </div>
@@ -24,7 +25,7 @@ var LandingPage = React.createClass({
     return (
       <header className="">
         <div className="landing-page-curtain img-responsive"></div>
-        <NavBar />
+        {/* <NavBar /> */}
         <QuickContact />
       </header>
     );
@@ -58,7 +59,11 @@ var QuickContact = React.createClass({
 var Content = React.createClass({
   render() {
     return (
-      <div className="content">
+      <div className="content container">
+        <AboutMe />
+        {/* <Skillset /> */}
+        {/* <PreviousWork /> */}
+        {/* <ContactMe /> */}
       </div>
     );
   }

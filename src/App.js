@@ -18,6 +18,7 @@ var App = React.createClass({
         <NavBar />
         <LandingPage />
         <Content />
+        <Footer />
       </div>
     );
   }
@@ -67,6 +68,14 @@ var Content = React.createClass({
         <PreviousWork />
         <ContactMe />
       </div>
+    );
+  }
+});
+
+var Footer = React.createClass({
+  render() {
+    return (
+      <div></div>
     );
   }
 });

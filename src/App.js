@@ -27,7 +27,6 @@ var LandingPage = React.createClass({
     return (
       <header className="">
         <div className="landing-page-curtain img-responsive"></div>
-        {/* <NavBar /> */}
         <QuickContact />
       </header>
     );
@@ -64,7 +63,7 @@ var Content = React.createClass({
       <div className="content container">
         <AboutMe />
         <SkillSet />
-        {/* <PreviousWork /> */}
+        <PreviousWork />
         {/* <ContactMe /> */}
       </div>
     );

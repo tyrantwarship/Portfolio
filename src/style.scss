@@ -122,6 +122,9 @@ nav {
   background-color: #847563; 
   padding-top: 80px;
   padding-bottom: 80px;
+  & h1, h2 {
+    color: white;
+  }
   & h2 {
     margin-bottom: 80px;
   }
@@ -135,3 +138,22 @@ nav {
   }
 }
 
+.previouswork-area {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  & h2 {
+    margin-bottom: 80px;
+    & small {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+}
+
+.previouswork-list {
+  & li{
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+}

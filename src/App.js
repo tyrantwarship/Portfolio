@@ -5,6 +5,7 @@ import QuickContactForm from "./quickContactForm.js";
 import AboutMe from "./aboutme.js";
 import SkillSet from "./skillset.js";
 import PreviousWork from "./previouswork.js"
+import ContactMe from "./contactme.js"
 require("bootstrap");
 require("bootstrap-webpack");
 require("./style.scss");
@@ -64,7 +65,7 @@ var Content = React.createClass({
         <AboutMe />
         <SkillSet />
         <PreviousWork />
-        {/* <ContactMe /> */}
+        <ContactMe />
       </div>
     );
   }

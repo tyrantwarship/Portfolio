@@ -169,3 +169,13 @@ nav {
     margin-bottom: 80px;
   }
 }
+
+.footer-area {
+ background-color: $navbar-background-color;
+ color: white;
+ height: 50px;
+ padding: 15px;
+ & a {
+  // color: white;
+ }
+}

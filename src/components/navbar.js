@@ -1,6 +1,7 @@
-import React from "react";
+import React,{Component} from 'react';
+var $ = require('jquery');
 
-var NavBar = React.createClass({
+export default class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-fixed-top">
@@ -17,16 +18,14 @@ var NavBar = React.createClass({
 
         <div className="collapse navbar-collapse" id="navbar-collapse-menu">
           <ul className="nav navbar-nav navbar-right">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skill Set</a></li>
-            <li><a href="#">Previous Work</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skillset">Skill Set</a></li>
+            <li><a href="#previouswork">Previous Work</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
           </ul>
         </div>
       </div>
       </nav>
     );
   }
-});
-
-module.exports = NavBar;
+}

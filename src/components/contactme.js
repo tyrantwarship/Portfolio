@@ -1,11 +1,11 @@
-import React from "react";
+import React,{Component} from 'react';
 
 var contactmethods = [1,2,3,4,5,];
 
-var ContactMe = React.createClass({
+export default class ContactMe extends Component {
   render() {
     return (
-      <div className="row contactme-area text-center">
+      <div className="row contactme-area text-center" id="contactme">
         <h1>Contact Me</h1>
         <h2>Got an Idea? Lets make it happen!</h2>
         <ul className="list-inline col-sm-offset-2 badges-list">
@@ -16,6 +16,4 @@ var ContactMe = React.createClass({
       </div>
     );
   }
-});
-
-module.exports = ContactMe;
+}

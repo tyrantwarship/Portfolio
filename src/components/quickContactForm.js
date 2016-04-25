@@ -1,6 +1,6 @@
-import React from "react";
+import React,{Component} from 'react';
 
-var QuickContactForm = React.createClass({
+export default class QuickContactForm extends Component {
   render() {
     return (
       <form className="form-horizontal quick-contact-form">
@@ -26,6 +26,4 @@ var QuickContactForm = React.createClass({
       </form>
     );
   }
-});
-
-module.exports = QuickContactForm;
+}

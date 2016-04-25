@@ -1,11 +1,11 @@
-import React from "react";
+import React,{Component} from 'react';
 
 var previouswork = [1,2,3,1,2,3];
 
-var PreviousWork = React.createClass({
+export default class PreviousWork extends Component {
   render() {
     return (
-      <div className="row previouswork-area text-center">
+      <div className="row previouswork-area text-center" id="previouswork">
         <h1>Previous Work</h1>
         <h2>See some of the projects I've worked on
           <br />
@@ -19,6 +19,4 @@ var PreviousWork = React.createClass({
       </div>
     );
   }
-});
-
-module.exports = PreviousWork;
+}

@@ -1,14 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 $navbar-background-color: #3f1911;
+$navbar-background-shadow-color: #2d120c;
+$landing-page-tint: rgba(0, 0, 0, .8);
 $quick-contact-box-shadow-size: 2px;
+$font-main-color: #e6e0cb;
+$font-main-family: 'Raleway', sans-serif;
+$ghost-button-background: rgba(0, 0, 0, .0);
+$ghost-button-hover-background: rgba(37, 15, 10, .6);
+$ghost-button-main-action: rgb(88, 87, 79);
+$content-background-color: #fff;
+$skillset-background-color: #847563;
+$skillset-header-color: #fff;
+$previouswork-background-color: #fff;
+$contactme-background-color: #847563;
+$contactme-header-color: #fff;
+$footer-foreground-color: #fff;
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-main-family;
 }
 
 a:focus {
+  color: $font-main-color;
   text-decoration: none;
-  color: #e6e0cb;
 }
 
 header {
@@ -18,39 +32,67 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-}
 
-header h1 {
-  color: #e6e0cb;
-  position: fixed;
-  top: 45%;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  text-align: center;
-  
-  & small {
+  h1 {
+    color: $font-main-color;
     display: block;
-    margin-top: 5px;
+    position: fixed;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+    z-index: 1;
+
+    small {
+      display: block;
+      margin-top: 5px;
+    }
   }
 }
 
-.landing-page-buttons {
-  z-index: 1;
-  position: fixed;
-  top: 60%;
-  display: block;
-  width: 100%;
-  text-align: center;
 
+
+@media only screen and (orientation: portrait) {
+  .landing-page-buttons {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 60%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  header h1 {
+    color: $font-main-color;
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+    z-index: 1;
+
+    small {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+  .landing-page-buttons {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 65%;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .button-contact-me,
 .button-portfolio {
-  background: rgba(0,0,0,.0);
-  /* border: 1px solid #009688; */
-  border: 1px solid #e6e0cb;
-  color: #e6e0cb;
+  background: $ghost-button-background;
+  border: 1px solid $font-main-color;
+  color: $font-main-color;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
@@ -60,32 +102,31 @@ header h1 {
   min-width: 120px;
   padding: 7px 12px;
   text-decoration: none;
- 
-  &:hover, &:active {
-             color: #e6e0cb;
-             background: rgba(37, 15, 10, 0.6);
-             text-decoration: none;
-            }
+
+  &:hover ,
+  &:active {
+    background: $ghost-button-hover-background;
+    color: $font-main-color;
+    text-decoration: none;
   }
+}
 
 .button-contact-me {
-  background: rgb(88, 87, 79);
+  background: $ghost-button-main-action;
 }
 
 .landing-page-curtain {
-  height: 100%;
   background: url('../assets/hue-coffee-code.jpg');
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
   z-index: 1;
-  /* filter: blur(3px); */
-  /* filter: grayscale(10%); */
-  /* filter: brightness(50%); */
-  &:after {
-    background: rgba(0, 0, 0, .8);
+
+  &::after {
+    background: $landing-page-tint;
     content: '';
     height: 100%;
     opacity: 1;
@@ -94,54 +135,47 @@ header h1 {
   }
 }
 
-.header-title h1 {
-  // background: black;
-  color: white;
-  z-index: 3;
-}
+.navbar-nav li a {
+  color: $font-main-color;
 
-ul.navbar-nav li a {
-  color: #e6e0cb;
-  &:hover:after {
-    content: '';
-    width: 70%;
-    position: absolute;
-    left: 15%;
+  &:hover::after {
+    border: 1px groove $font-main-color;
     bottom: 5px;
-    border: 1px groove #e6e0cb;
+    content: '';
+    left: 15%;
+    position: absolute;
+    width: 70%;
   }
 }
 
-ul.navbar-nav li a:hover {
+.navbar-nav li a:hover {
   background-color: transparent;
 }
-ul.navbar-nav li a:focus {
+
+.navbar-nav li a:focus {
   background-color: transparent;
 }
 
 nav {
-  color: #e6e0cb;
+  color: $font-main-color;
   transition: all 1s;
 }
 
 .navbar-background-color {
   background-color: $navbar-background-color;
-  box-shadow: 0px -2px #2d120c inset;
-  //border: 1px solid white;
+  box-shadow: 0 -2px $navbar-background-shadow-color inset;
 }
 
-.navbar-header button span.icon-bar {
-  background-color: #e6e0cb; 
-}
-
-.navbar-brand {
-  color: #e6e0cb !important;
+.icon-bar {
+  background-color: $font-main-color;
 }
 
 .menu-top-option {
-  color: white;
-  &:focus, &:hover {
-    color: white;
+  color: $font-main-color;
+
+  &:focus ,
+  &:hover {
+    color: $font-main-color;
   }
 }
 
@@ -149,11 +183,11 @@ nav {
   // height: 100%;
   // background-image: url("../assets/code-820275.jpg");
   // background-attachment: fixed;
-  background-color: #ffffff;
-  z-index: 2;
+  background-color: $content-background-color;
   position: absolute;
   top: 100%;
   width: 100%;
+  z-index: 2;
 }
 
 .about-me-header {
@@ -166,19 +200,23 @@ nav {
 
 .about-me-paragraph {
   margin-top: 20px;
+
   &:last-child {
     margin-bottom: 120px;
   }
 }
 
 .skillset-area {
-  background-color: #847563; 
-  padding-top: 80px;
+  background-color: $skillset-background-color;
   padding-bottom: 80px;
-  & h1, h2 {
-    color: white;
+  padding-top: 80px;
+
+  h1 ,
+  h2 {
+    color: $skillset-header-color;
   }
-  & h2 {
+
+  h2 {
     margin-bottom: 80px;
   }
 }
@@ -186,18 +224,21 @@ nav {
 .badges-list li {
   margin-bottom: 10px;
   margin-top: 10px;
-  &:nth-child(5n){
+
+  &:nth-child(5n) {
     margin-right: 50px;
   }
 }
 
 .previouswork-area {
-  background-color: #fff;
-  padding-top: 80px;
+  background-color: $previouswork-background-color;
   padding-bottom: 80px;
-  & h2 {
+  padding-top: 80px;
+
+  h2 {
     margin-bottom: 80px;
-    & small {
+
+    small {
       display: inline-block;
       padding: 5px;
     }
@@ -205,30 +246,34 @@ nav {
 }
 
 .previouswork-list {
-  & li{
-    margin-bottom: 60px;
+  li {
     cursor: pointer;
+    margin-bottom: 60px;
   }
 }
 
 .contactme-area {
-  background-color: #847563; 
-  padding-top: 80px;
+  background-color: $contactme-background-color;
   padding-bottom: 80px;
-  & h1, h2 {
-    color: white;
+  padding-top: 80px;
+
+  h1,
+  h2 {
+    color: $contactme-header-color;
   }
-  & h2 {
+
+  h2 {
     margin-bottom: 80px;
   }
 }
 
 .footer-area {
- background-color: $navbar-background-color;
- color: white;
- height: 50px;
- padding: 15px;
- & a {
-  // color: white;
- }
+  background-color: $navbar-background-color;
+  color: $footer-foreground-color;
+  height: 50px;
+  padding: 15px;
+
+  a {
+    // color: white;
+  }
 }

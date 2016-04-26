@@ -94,43 +94,11 @@ header h1 {
   }
 }
 
-.quick-contact-container {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  // margin: 0 auto;
-  text-align: center;
-  margin-top: -20px;
-  color: #FFFFFF;
-  z-index: 1;
-}
-
-.quick-contact-box {
-  width: 50%;
-  height: 400px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, .5);
-  border: black solid 1px;
-  box-shadow: $quick-contact-box-shadow-size $quick-contact-box-shadow-size black inset,  $quick-contact-box-shadow-size*-1 $quick-contact-box-shadow-size*-1 black inset
-}
-
-.header-title {
-}
-
 .header-title h1 {
   // background: black;
   color: white;
   z-index: 3;
 }
-
-.quick-contact-form {
-  margin: 40px auto;
-  & .form-group label {
-    text-align: left;
-    padding-left: 25px;
-  }
-}
-
 
 ul.navbar-nav li a {
   color: #e6e0cb;

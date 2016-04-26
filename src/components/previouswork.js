@@ -1,9 +1,8 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 var previouswork = [1,2,3,1,2,3];
 
-export default class PreviousWork extends Component {
-  render() {
+export default () => {
     return (
       <div className="row previouswork-area text-center" id="previouswork">
         <h1>Previous Work</h1>
@@ -18,5 +17,4 @@ export default class PreviousWork extends Component {
         </ul>
       </div>
     );
-  }
 }

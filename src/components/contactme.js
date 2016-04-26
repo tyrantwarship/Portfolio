@@ -1,9 +1,8 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 var contactmethods = [1,2,3,4,5,];
 
-export default class ContactMe extends Component {
-  render() {
+export default () => {
     return (
       <div className="row contactme-area text-center" id="contactme">
         <h1>Contact Me</h1>
@@ -15,5 +14,4 @@ export default class ContactMe extends Component {
         </ul>
       </div>
     );
-  }
 }

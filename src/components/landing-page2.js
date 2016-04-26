@@ -1,7 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-export default class LandingPage extends Component {
-  render() {
+export default () => {
     return(
       <header className="">
         <div className="landing-page-curtain img-responsive"></div>
@@ -12,5 +11,4 @@ export default class LandingPage extends Component {
         </div>
       </header>
     );
-  }
 }

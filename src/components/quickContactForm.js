@@ -1,7 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-export default class QuickContactForm extends Component {
-  render() {
+export default () => {
     return (
       <form className="form-horizontal quick-contact-form">
         <div className="form-group">
@@ -25,5 +24,4 @@ export default class QuickContactForm extends Component {
         </div>
       </form>
     );
-  }
 }

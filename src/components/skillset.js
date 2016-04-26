@@ -1,9 +1,8 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 var skillset = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
-export default class SkillSet extends Component {
-  render() {
+export default () => {
     return (
       <div className="row skillset-area" id="skillset">
         <h1 className="text-center">Skillset</h1>
@@ -15,5 +14,4 @@ export default class SkillSet extends Component {
         </ul>
       </div>
     );
-  }
 }

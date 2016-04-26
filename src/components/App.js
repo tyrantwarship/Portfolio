@@ -8,7 +8,7 @@ require('../../styles/style.scss');
 
 
 
-export default (props) => {
+export default () => {
   return (
     <div>
       <NavBar />

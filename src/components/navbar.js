@@ -1,8 +1,6 @@
-import React,{Component} from 'react';
-var $ = require('jquery');
+import React from 'react';
 
-export default class NavBar extends Component {
-  render() {
+export default () => {
     return (
       <nav className="navbar navbar-fixed-top">
       <div className="container-fluid">
@@ -27,5 +25,4 @@ export default class NavBar extends Component {
       </div>
       </nav>
     );
-  }
 }

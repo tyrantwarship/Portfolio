@@ -1,16 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 $navbar-background-color: #3f1911;
 $quick-contact-box-shadow-size: 2px;
 
 body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #e6e0cb;
 }
 
 header {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1 {
+  color: #e6e0cb;
+  position: fixed;
+  top: 45%;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  text-align: center;
+  
+  & small {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.landing-page-buttons {
+  z-index: 1;
+  position: fixed;
+  top: 60%;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+
+.button-contact-me,
+.button-portfolio {
+  background: rgba(0,0,0,.0);
+  /* border: 1px solid #009688; */
+  border: 1px solid #e6e0cb;
+  color: #e6e0cb;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin: 6px 0;
+  margin-right: 12px;
+  min-width: 120px;
+  padding: 7px 12px;
+  text-decoration: none;
+ 
+  &:hover, &:active {
+             color: #e6e0cb;
+             background: rgba(37, 15, 10, 0.6);
+             text-decoration: none;
+            }
+  }
+
+.button-contact-me {
+  background: rgb(88, 87, 79);
 }
 
 .landing-page-curtain {
@@ -21,8 +80,18 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  filter: blur(3px);
   z-index: 1;
+  /* filter: blur(3px); */
+  /* filter: grayscale(10%); */
+  /* filter: brightness(50%); */
+  &:after {
+    background: rgba(0, 0, 0, .8);
+    content: '';
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .quick-contact-container {
@@ -50,6 +119,8 @@ header {
 
 .header-title h1 {
   // background: black;
+  color: white;
+  z-index: 3;
 }
 
 .quick-contact-form {
@@ -62,14 +133,14 @@ header {
 
 
 ul.navbar-nav li a {
-  color: white;
+  color: #e6e0cb;
   &:hover:after {
     content: '';
     width: 70%;
     position: absolute;
     left: 15%;
     bottom: 5px;
-    border: 1px dotted white;
+    border: 1px groove #e6e0cb;
   }
 }
 
@@ -81,6 +152,7 @@ ul.navbar-nav li a:focus {
 }
 
 nav {
+  color: #e6e0cb;
   transition: all 1s;
 }
 
@@ -91,7 +163,11 @@ nav {
 }
 
 .navbar-header button span.icon-bar {
-  background-color: white;
+  background-color: #e6e0cb; 
+}
+
+.navbar-brand {
+  color: #e6e0cb !important;
 }
 
 .menu-top-option {

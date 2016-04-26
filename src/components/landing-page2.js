@@ -1,43 +1,16 @@
 import React,{Component} from 'react';
 
-// old landing page 
-/* var LandingPage = React.createClass({
-   render() {
-   return (
-   <header className="">
-   <div className="landing-page-curtain img-responsive"></div>
-   <QuickContact />
-   </header>
-   );
-   }
-   }); */
-/* var QuickContact = React.createClass({
-   render() {
-   return (
-   <div className="quick-contact-container">
-   <div className="quick-contact-box">
-   <Header />
-   <QuickContactForm />
-   </div>
-   </div>
-   );
-   }
-   }); */
-/* var Header = React.createClass({
-   render() {
-   return (
-   <div className="header-title">
-   <h1>Web and Mobile Developer</h1>
-   <h3>Reach Me</h3>
-   </div>
-   );
-   }
-   }); */
-
 export default class LandingPage extends Component {
   render() {
     return(
-      <div className="landing-page-curtain img-responsive"></div>
+      <header className="">
+        <div className="landing-page-curtain img-responsive"></div>
+        <h1>Fanaticus <small>Full Stack Web Developer</small></h1>
+        <div className="landing-page-buttons">
+          <a href="#" className="button-contact-me">Contact Me</a>
+          <a href="#" className="button-portfolio">Portfolio</a>
+        </div>
+      </header>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './navbar';
-import LandingPage from './landing-page2';
+import LandingPage from './landingpage';
 import Content from './content';
 require('bootstrap');
 require('bootstrap-webpack');

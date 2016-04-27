@@ -1,0 +1,12 @@
+$footer-foreground-color: #fff;
+
+.footer-area {
+  background-color: $navbar-background-color;
+  color: $footer-foreground-color;
+  height: 50px;
+  padding: 15px;
+
+  a {
+    // color: white;
+  }
+}

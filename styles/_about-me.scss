@@ -1,0 +1,15 @@
+.about-me-header {
+  margin-top: 40px;
+}
+
+.about-me-picture {
+  margin-top: 80px;
+}
+
+.about-me-paragraph {
+  margin-top: 20px;
+
+  &:last-child {
+    margin-bottom: 120px;
+  }
+}

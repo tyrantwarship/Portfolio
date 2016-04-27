@@ -1,0 +1,17 @@
+$contactme-background-color: #847563;
+$contactme-header-color: #fff;
+
+.contactme-area {
+  background-color: $contactme-background-color;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  h1,
+  h2 {
+    color: $contactme-header-color;
+  }
+
+  h2 {
+    margin-bottom: 80px;
+  }
+}

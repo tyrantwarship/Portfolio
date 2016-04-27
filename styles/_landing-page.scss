@@ -1,0 +1,114 @@
+$ghost-button-background: rgba(0, 0, 0, .0);
+$ghost-button-hover-background: rgba(37, 15, 10, .6);
+$ghost-button-main-action: rgb(88, 87, 79);
+$landing-page-tint: rgba(0, 0, 0, .8);
+
+header {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  h1 {
+    color: $font-main-color;
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+    z-index: 1;
+
+    small {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+
+
+@media only screen and (orientation: portrait) {
+  .landing-page-buttons {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 60%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  header h1 {
+    color: $font-main-color;
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+    z-index: 1;
+
+    small {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+  .landing-page-buttons {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 65%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.button-contact-me,
+.button-portfolio {
+  background: $ghost-button-background;
+  border: 1px solid $font-main-color;
+  color: $font-main-color;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin: 6px 0;
+  margin-right: 12px;
+  min-width: 120px;
+  padding: 7px 12px;
+  text-decoration: none;
+
+  &:hover ,
+  &:active {
+    background: $ghost-button-hover-background;
+    color: $font-main-color;
+    text-decoration: none;
+  }
+}
+
+.button-contact-me {
+  background: $ghost-button-main-action;
+}
+
+.landing-page-curtain {
+  background: url('../assets/hue-coffee-code.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    background: $landing-page-tint;
+    content: '';
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+  }
+}

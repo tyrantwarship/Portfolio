@@ -1,20 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-$navbar-background-color: #3f1911;
-$navbar-background-shadow-color: #2d120c;
-$landing-page-tint: rgba(0, 0, 0, .8);
-$quick-contact-box-shadow-size: 2px;
 $font-main-color: #e6e0cb;
 $font-main-family: 'Raleway', sans-serif;
-$ghost-button-background: rgba(0, 0, 0, .0);
-$ghost-button-hover-background: rgba(37, 15, 10, .6);
-$ghost-button-main-action: rgb(88, 87, 79);
+$quick-contact-box-shadow-size: 2px;
 $content-background-color: #fff;
-$skillset-background-color: #847563;
-$skillset-header-color: #fff;
-$previouswork-background-color: #fff;
-$contactme-background-color: #847563;
-$contactme-header-color: #fff;
-$footer-foreground-color: #fff;
+@import './landing-page';
+@import './navbar';
+@import './about-me';
+@import './skill-set';
+@import './previous-work';
+@import './contact-me';
+@import './footer';
 
 body {
   font-family: $font-main-family;
@@ -25,164 +20,8 @@ a:focus {
   text-decoration: none;
 }
 
-header {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-
-  h1 {
-    color: $font-main-color;
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 45%;
-    width: 100%;
-    z-index: 1;
-
-    small {
-      display: block;
-      margin-top: 5px;
-    }
-  }
-}
-
-
-
-@media only screen and (orientation: portrait) {
-  .landing-page-buttons {
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 60%;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  header h1 {
-    color: $font-main-color;
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 35%;
-    width: 100%;
-    z-index: 1;
-
-    small {
-      display: block;
-      margin-top: 5px;
-    }
-  }
-
-  .landing-page-buttons {
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 65%;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-.button-contact-me,
-.button-portfolio {
-  background: $ghost-button-background;
-  border: 1px solid $font-main-color;
-  color: $font-main-color;
-  display: inline-block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  font-weight: normal;
-  margin: 6px 0;
-  margin-right: 12px;
-  min-width: 120px;
-  padding: 7px 12px;
-  text-decoration: none;
-
-  &:hover ,
-  &:active {
-    background: $ghost-button-hover-background;
-    color: $font-main-color;
-    text-decoration: none;
-  }
-}
-
-.button-contact-me {
-  background: $ghost-button-main-action;
-}
-
-.landing-page-curtain {
-  background: url('../assets/hue-coffee-code.jpg');
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-
-  &::after {
-    background: $landing-page-tint;
-    content: '';
-    height: 100%;
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-  }
-}
-
-.navbar-nav li a {
-  color: $font-main-color;
-
-  &:hover::after {
-    border: 1px groove $font-main-color;
-    bottom: 5px;
-    content: '';
-    left: 15%;
-    position: absolute;
-    width: 70%;
-  }
-}
-
-.navbar-nav li a:hover {
-  background-color: transparent;
-}
-
-.navbar-nav li a:focus {
-  background-color: transparent;
-}
-
-nav {
-  color: $font-main-color;
-  transition: all 1s;
-}
-
-.navbar-background-color {
-  background-color: $navbar-background-color;
-  box-shadow: 0 -2px $navbar-background-shadow-color inset;
-}
-
-.icon-bar {
-  background-color: $font-main-color;
-}
-
-.menu-top-option {
-  color: $font-main-color;
-
-  &:focus ,
-  &:hover {
-    color: $font-main-color;
-  }
-}
 
 .content {
-  // height: 100%;
-  // background-image: url("../assets/code-820275.jpg");
-  // background-attachment: fixed;
   background-color: $content-background-color;
   position: absolute;
   top: 100%;
@@ -190,90 +29,6 @@ nav {
   z-index: 2;
 }
 
-.about-me-header {
-  margin-top: 40px;
-}
 
-.about-me-picture {
-  margin-top: 80px;
-}
 
-.about-me-paragraph {
-  margin-top: 20px;
 
-  &:last-child {
-    margin-bottom: 120px;
-  }
-}
-
-.skillset-area {
-  background-color: $skillset-background-color;
-  padding-bottom: 80px;
-  padding-top: 80px;
-
-  h1 ,
-  h2 {
-    color: $skillset-header-color;
-  }
-
-  h2 {
-    margin-bottom: 80px;
-  }
-}
-
-.badges-list li {
-  margin-bottom: 10px;
-  margin-top: 10px;
-
-  &:nth-child(5n) {
-    margin-right: 50px;
-  }
-}
-
-.previouswork-area {
-  background-color: $previouswork-background-color;
-  padding-bottom: 80px;
-  padding-top: 80px;
-
-  h2 {
-    margin-bottom: 80px;
-
-    small {
-      display: inline-block;
-      padding: 5px;
-    }
-  }
-}
-
-.previouswork-list {
-  li {
-    cursor: pointer;
-    margin-bottom: 60px;
-  }
-}
-
-.contactme-area {
-  background-color: $contactme-background-color;
-  padding-bottom: 80px;
-  padding-top: 80px;
-
-  h1,
-  h2 {
-    color: $contactme-header-color;
-  }
-
-  h2 {
-    margin-bottom: 80px;
-  }
-}
-
-.footer-area {
-  background-color: $navbar-background-color;
-  color: $footer-foreground-color;
-  height: 50px;
-  padding: 15px;
-
-  a {
-    // color: white;
-  }
-}

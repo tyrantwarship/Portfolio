@@ -1,0 +1,46 @@
+$navbar-background-color: #3f1911;
+$navbar-background-shadow-color: #2d120c;
+
+.navbar-nav li a {
+  color: $font-main-color;
+
+  &:hover::after {
+    border: 1px groove $font-main-color;
+    bottom: 5px;
+    content: '';
+    left: 15%;
+    position: absolute;
+    width: 70%;
+  }
+}
+
+.navbar-nav li a:hover {
+  background-color: transparent;
+}
+
+.navbar-nav li a:focus {
+  background-color: transparent;
+}
+
+nav {
+  color: $font-main-color;
+  transition: all 1s;
+}
+
+.navbar-background-color {
+  background-color: $navbar-background-color;
+  box-shadow: 0 -2px $navbar-background-shadow-color inset;
+}
+
+.icon-bar {
+  background-color: $font-main-color;
+}
+
+.menu-top-option {
+  color: $font-main-color;
+
+  &:focus ,
+  &:hover {
+    color: $font-main-color;
+  }
+}

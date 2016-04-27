@@ -1,0 +1,26 @@
+$skillset-background-color: #847563;
+$skillset-header-color: #fff;
+
+.skillset-area {
+  background-color: $skillset-background-color;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  h1 ,
+  h2 {
+    color: $skillset-header-color;
+  }
+
+  h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.badges-list li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  &:nth-child(5n) {
+    margin-right: 50px;
+  }
+}

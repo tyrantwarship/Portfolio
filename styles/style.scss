@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 $font-main-color: #e6e0cb;
 $font-main-family: 'Raleway', sans-serif;
+// allows for better em management
+$base-font-size: 62.5%;
 $content-background-color: #fff;
 @import './landing-page';
 @import './navbar';
@@ -12,6 +14,7 @@ $content-background-color: #fff;
 
 body {
   font-family: $font-main-family;
+  font-size: $base-font-size;
 }
 
 a:focus {

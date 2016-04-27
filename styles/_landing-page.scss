@@ -5,50 +5,23 @@ $landing-page-tint: rgba(0, 0, 0, .8);
 
 header {
   height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
+  position: relative;
+  width: 100%;
+}
+
+.landing-page-content {
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 40%;
   width: 100%;
   z-index: 1;
 
   h1 {
     color: $font-main-color;
     display: block;
-    position: fixed;
     text-align: center;
-    top: 45%;
     width: 100%;
-    z-index: 1;
-
-    small {
-      display: block;
-      margin-top: 5px;
-    }
-  }
-}
-
-
-
-@media only screen and (orientation: portrait) {
-  .landing-page-buttons {
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 60%;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  header h1 {
-    color: $font-main-color;
-    display: block;
-    position: fixed;
-    text-align: center;
-    top: 35%;
-    width: 100%;
-    z-index: 1;
 
     small {
       display: block;
@@ -58,11 +31,7 @@ header {
 
   .landing-page-buttons {
     display: block;
-    position: fixed;
-    text-align: center;
-    top: 65%;
     width: 100%;
-    z-index: 1;
   }
 }
 
@@ -81,7 +50,7 @@ header {
   padding: 7px 12px;
   text-decoration: none;
 
-  &:hover ,
+  &:hover,
   &:active {
     background: $ghost-button-hover-background;
     color: $font-main-color;

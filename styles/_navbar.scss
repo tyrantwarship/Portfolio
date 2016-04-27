@@ -3,14 +3,18 @@ $navbar-background-shadow-color: #2d120c;
 
 .navbar-nav li a {
   color: $font-main-color;
+}
 
-  &:hover::after {
-    border: 1px groove $font-main-color;
-    bottom: 5px;
-    content: '';
-    left: 15%;
-    position: absolute;
-    width: 70%;
+@media only screen and (min-width: 768px) {
+  .navbar-nav li a {
+    &:hover::after {
+      border: 1px groove $font-main-color;
+      bottom: 5px;
+      content: '';
+      left: 15%;
+      position: absolute;
+      width: 70%;
+    }
   }
 }
 

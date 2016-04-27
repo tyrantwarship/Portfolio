@@ -1,15 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .about-me-header {
-  margin-top: 40px;
+  display: block;
+  margin-top: .5em;
+  width: 100%;
+
+  small {
+    display: block;
+    width: 100%;
+  }
 }
 
 .about-me-picture {
-  margin-top: 80px;
+  margin-top: 12em;
 }
 
 .about-me-paragraph {
-  margin-top: 20px;
+  font-family: $font-secondary-family;
+  font-size: 2.5em;
+  margin-bottom: 12em;
+  margin-top: 2em;
+  text-align: center;
 
-  &:last-child {
-    margin-bottom: 120px;
-  }
 }

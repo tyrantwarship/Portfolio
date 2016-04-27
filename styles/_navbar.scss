@@ -3,6 +3,7 @@ $navbar-background-shadow-color: #2d120c;
 
 .navbar-nav li a {
   color: $font-main-color;
+  font-size: 2em;
 }
 
 @media only screen and (min-width: 768px) {

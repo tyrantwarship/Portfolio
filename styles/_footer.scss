@@ -1,10 +1,14 @@
 $footer-foreground-color: #fff;
+$footer-background-color: #3f1911;
+$navbar-background-shadow-color: rgba(45, 18, 12, .41);
 
 .footer-area {
-  background-color: $navbar-background-color;
+  background-color: $footer-background-color;
+  box-shadow: 0 2px $navbar-background-shadow-color inset;
   color: $footer-foreground-color;
-  height: 50px;
-  padding: 15px;
+  font-size: 1.5em;
+  height: 5em;
+  padding: 1em;
 
   a {
     // color: white;

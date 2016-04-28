@@ -1,26 +1,42 @@
 $skillset-background-color: #847563;
 $skillset-header-color: #fff;
+$skillset-header-small-color: rgba(255, 255, 255, .56);
+$skillset-tip-color: rgba(255, 255, 255, .56);
 
 .skillset-area {
   background-color: $skillset-background-color;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 9em;
+  padding-top: 9em;
 
-  h1 ,
-  h2 {
+  h1 {
     color: $skillset-header-color;
-  }
 
-  h2 {
-    margin-bottom: 80px;
-  }
-}
-
-.badges-list li {
-  margin-bottom: 10px;
-  margin-top: 10px;
-
-  &:nth-child(5n) {
-    margin-right: 50px;
+    small {
+      color: $skillset-header-small-color;
+      display: block;
+    }
   }
 }
+
+.skillset-badges-list {
+  margin: 3em 0;
+  padding: 0;
+}
+
+.skillset-badges-row {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.skillset-badge {
+  display: inline-block;
+  margin: 2em 1em;
+}
+
+.skillset-tip {
+  color: $skillset-tip-color;
+  margin: 2em 0;
+  text-align: center;
+}
+

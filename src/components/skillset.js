@@ -20,7 +20,6 @@ export default () => {
     return (
       <div className="row skillset-area" id="skillset">
         <h1 className="text-center">Skillset <small>My ever growing list...</small></h1>
-        {/* <h2 className="text-center">My ever growing list...</h2> */}
         <ul className="skillset-badges-list">
           {/* {
           skillset.map((value, index) => <li className="col-sm-2" key={index}><img src="http://placehold.it/100x100" className="img-circle"/></li>)

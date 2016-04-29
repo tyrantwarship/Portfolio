@@ -9,7 +9,7 @@ export default () => {
         <h2>Got an Idea? Lets make it happen!</h2>
         <ul className="list-inline col-sm-offset-2 badges-list">
           {
-            contactmethods.map((value, index) => <li className="col-sm-2" key={index}><img src="http://placehold.it/100x100" className="img-circle"/></li>)
+            contactmethods.map((value, index) => <li className="col-xs-6 col-sm-2 contactme-badge" key={index}><img src="http://placehold.it/110x110" className="img-circle"/></li>)
           }
         </ul>
       </div>

@@ -23,6 +23,10 @@ $skillset-tip-color: rgba(255, 255, 255, .56);
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .skillset-badges-row {
   display: block;
   text-align: center;
@@ -41,3 +45,20 @@ $skillset-tip-color: rgba(255, 255, 255, .56);
   text-align: center;
 }
 
+@media screen and (min-width: 1400px) {
+  .skillset-area h1 {
+    font-size: 4.5em;
+  }
+}
+
+svg {
+  max-width: 7em;
+}
+
+.devicon-d3js-plain {
+  font-size: 6em;
+}
+/* if you want to change the original color */
+/* path { */
+/*   fill: #4691f6; */
+/* } */

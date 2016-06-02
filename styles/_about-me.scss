@@ -21,5 +21,14 @@
   margin-bottom: 10em;
   margin-top: 2em;
   text-align: center;
-
 }
+
+@media screen and (min-width: 1400px) {
+  .about-me-header {
+    font-size: 7em;
+  }
+  .about-me-paragraph {
+    font-size: 4.5em;
+  }
+}
+

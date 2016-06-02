@@ -1,6 +1,13 @@
 import React from 'react';
+import * as ContactMe from './contactme-svgs';
 
-var contactmethods = [1,2,3,4,5,];
+//var contactmethods = [1,2,3,4,5,];
+const contactmethods = [
+  <ContactMe.gmail />,
+  <ContactMe.linkedIn />,
+  <ContactMe.codepen />,
+  <ContactMe.github />
+];
 
 export default () => {
     return (
@@ -9,7 +16,11 @@ export default () => {
         <h2>Got an Idea? Lets make it happen!</h2>
         <ul className="list-inline col-sm-offset-2 badges-list">
           {
-            contactmethods.map((value, index) => <li className="col-xs-6 col-sm-2 contactme-badge" key={index}><img src="http://placehold.it/110x110" className="img-circle"/></li>)
+            contactmethods.map((value, index) =>
+            <li className="col-xs-3 contactme-badge"
+                key={index}>
+                {value}
+            </li>)
           }
         </ul>
       </div>

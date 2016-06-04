@@ -24,6 +24,7 @@ const skillset = [
   <SVGS.nodejs />,
   <SVGS.python />,
   <SVGS.react />,
+  <SVGS.angular />,
   <SVGS.sass />,
   <SVGS.ssh />,
   <SVGS.trello />,
@@ -46,7 +47,7 @@ const featured_skillset = [
   <SVGS.nodejs />,
   <SVGS.grunt />,
   <SVGS.bower />,
-  <SVGS.git />
+  <SVGS.angular />
 ];
 
 // this is a test

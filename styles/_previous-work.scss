@@ -5,6 +5,7 @@ $previouswork-tip-color: #777;
   background-color: $previouswork-background-color;
   padding-bottom: 8em;
   padding-top: 8em;
+  height: 100vh;
 
   h1 {
     small {
@@ -32,4 +33,16 @@ $previouswork-tip-color: #777;
 .previouswork-tip {
   color: $previouswork-tip-color;
   text-align: center;
+}
+
+#myCarousel {
+  margin-top: 7em;
+}
+
+.item img {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 350px;
+  min-height: 350px;
+
 }

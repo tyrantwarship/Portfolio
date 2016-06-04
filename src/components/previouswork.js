@@ -15,16 +15,16 @@ const Carousel = () => {
 
       <div className="carousel-inner" role="listbox">
         <div className="item active">
-          <img alt="simon-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png"/>
+          <a target="_blank" href="http://tyrantwarship.github.io/FCC-SimonSays-Zipline"><img alt="simon-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png"/>
+</a>        </div>
+        <div className="item">
+          <a target="_blank" href="http://tyrantwarship.github.io/FCC-WikiSearch-Zipline"><img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-WikiSearch-Zipline/master/demo-first.png"/></a>
         </div>
         <div className="item">
-          <img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-WikiSearch-Zipline/master/demo-first.png"/>
+          <a target="_blank" href="http://tyrantwarship.github.io/FCC-RecipeBox-Zipline"><img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-RecipeBox-Zipline/master/preview1.png"/></a>
         </div>
         <div className="item">
-          <img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-RecipeBox-Zipline/master/preview1.png"/>
-        </div>
-        <div className="item">
-          <img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-Calculator-Zipline/master/preview.png"/>
+          <a target="_blank" href="http://tyrantwarship.github.io/FCC-Calculator-Zipline"><img alt="Chania" src="https://raw.githubusercontent.com/tyrantwarship/FCC-Calculator-Zipline/master/preview.png"/></a>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default () => {
         </li> */}
       </ul>
       <Carousel />
-      <h5 className="previouswork-tip">Note: Click any for more details</h5>
+      <h5 className="previouswork-tip">Note: Click for project page</h5>
     </div>
   );
 }

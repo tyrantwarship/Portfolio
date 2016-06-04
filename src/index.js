@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-var $ = require('jquery');
+import $ from 'jquery';
 import App from './components/App.js';
 
 

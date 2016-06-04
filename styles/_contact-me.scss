@@ -5,6 +5,7 @@ $contactme-header-color: #fff;
   background-color: $contactme-background-color;
   padding-bottom: 80px;
   padding-top: 80px;
+  height: 90vh;
 
   h1,
   h2 {
@@ -18,5 +19,9 @@ $contactme-header-color: #fff;
 
 .contactme-badge {
   margin-bottom: 1.5em;
+}
+
+.github-icon path{
+  fill: #fff;
 }
 

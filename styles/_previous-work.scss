@@ -46,3 +46,15 @@ $previouswork-tip-color: #777;
   min-height: 350px;
 
 }
+
+.caption-description {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  left: 0; 
+
+  p {
+    font-size: 2em;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}

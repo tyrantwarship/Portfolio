@@ -17,7 +17,7 @@ const Carousel = () => {
         <div className="item active">
           <a target="_blank" href="http://tyrantwarship.github.io/FCC-SimonSays-Zipline">
             <img alt="simon-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png"/>
-            <div className="carousel-caption">
+            <div className="carousel-caption caption-description">
               <h3>Simon Says</h3>
               <p>Web application based on the timeless game, "Simon Says". Built with React and Sass.</p>
             </div>
@@ -26,7 +26,7 @@ const Carousel = () => {
         <div className="item">
           <a target="_blank" href="http://tyrantwarship.github.io/FCC-WikiSearch-Zipline">
             <img alt="wikipedia-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-WikiSearch-Zipline/master/demo-first.png"/>
-            <div className="carousel-caption">
+            <div className="carousel-caption caption-description">
               <h3>Wikipedia Searcher</h3>
               <p>Search Wikipedia with this beautifully designed searcher. Implements the wikipedia API and built with Angular and Sass.</p>
             </div>
@@ -35,7 +35,7 @@ const Carousel = () => {
         <div className="item">
           <a target="_blank" href="http://tyrantwarship.github.io/FCC-RecipeBox-Zipline">
             <img alt="recipebox-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-RecipeBox-Zipline/master/preview1.png"/>
-            <div className="carousel-caption">
+            <div className="carousel-caption caption-description">
               <h3>Recipe Box</h3>
               <p>Keep track of all your recipes with this browser-memory persistent Recipe Box. Built with React and Sass.</p>
             </div>
@@ -44,7 +44,7 @@ const Carousel = () => {
         <div className="item">
           <a target="_blank" href="http://tyrantwarship.github.io/FCC-Calculator-Zipline">
             <img alt="calculator-project" src="https://raw.githubusercontent.com/tyrantwarship/FCC-Calculator-Zipline/master/preview.png"/>
-            <div className="carousel-caption">
+            <div className="carousel-caption caption-description">
               <h3>Calculator</h3>
               <p>Do mathetical calculations with whole or decimal values, on a visually pleasing calculator that works on all browsers. Built with Angular and Sass.</p>
             </div>

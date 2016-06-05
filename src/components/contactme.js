@@ -20,7 +20,7 @@ export default () => {
             <li className="col-xs-3 contactme-badge"
               key={index}>
               {value.component}
-              <p>{value.title}</p>
+              <p className="contactme-title">{value.title}</p>
             </li>)
         }
       </ul>

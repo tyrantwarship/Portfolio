@@ -7,8 +7,8 @@ export default () => {
         <div className="landing-page-content">
           <h1>Fanaticus <small>Full Stack Web Developer</small></h1>
           <div className="landing-page-buttons">
-            <a href="#" className="button-contact-me">Contact Me</a>
-            <a href="#" className="button-portfolio">Portfolio</a>
+            <a href="#contactme" className="button-contact-me">Contact Me</a>
+            <a href="#previouswork" className="button-portfolio">Portfolio</a>
           </div>
         </div>
       </header>

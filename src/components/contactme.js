@@ -3,10 +3,10 @@ import * as ContactMe from './contactme-svgs';
 
 //var contactmethods = [1,2,3,4,5,];
 const contactmethods = [
-  {component: <ContactMe.gmail/>, title: 'gmail'},
-  {component: <ContactMe.codepen/>, title: 'codepen'},
-  {component: <ContactMe.githubBlack />, title: 'github'},
-  {component: <ContactMe.linkedIn/>, title: 'linked-in'}
+  {component: <ContactMe.gmail/>, title: 'gmail', link: 'mailto:tyrantwarzhip@gmail.com'},
+  {component: <ContactMe.codepen/>, title: 'codepen', link: 'http://codepen.io/tyrantwarship'},
+  {component: <ContactMe.githubBlack />, title: 'github', link: 'http://github.com/tyrantwarship'},
+  {component: <ContactMe.linkedIn/>, title: 'linked-in', link: 'https://www.linkedin.com/in/felipe-romo-790092b7'}
 ];
 
 export default () => {
@@ -17,10 +17,11 @@ export default () => {
       <ul className="list-inline col-sm-offset-2 badges-list">
         {
           contactmethods.map((value, index) =>
-            <li className="col-xs-3 contactme-badge"
-              key={index}>
-              {value.component}
-              <p className="contactme-title">{value.title}</p>
+            <li className="col-xs-3 contactme-badge" key={index}>
+              <a target="_blank" href={value.link}>
+                {value.component}
+                <p className="contactme-title">{value.title}</p>
+              </a>
             </li>)
         }
       </ul>

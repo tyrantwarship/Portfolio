@@ -70,7 +70,7 @@ export default () => {
       <ul className="skillset-badges-list row text-center">
         {formated_skillset}
       </ul>
-      <h5 className="skillset-tip">Note: Click any for more info</h5>
+      <h5 className="skillset-tip">Note: Only a small portion of my skillset, relevant to web development, if you have a question about a particular skill, listed or not. Shoot me an email <a target="_blank" href="mailto:tyrantwarzhip@gmail.com">tyrantwarzhip@gmail.com</a></h5>
     </div>
   );
 }

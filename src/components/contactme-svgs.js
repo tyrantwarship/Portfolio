@@ -2,7 +2,7 @@ import React from 'react';
 
 export function gmail() {
   return (
-    <svg width="47px" height="48px" viewBox="0 0 47 48" version="1.1">
+    <svg width="48px" height="48px" viewBox="0 0 47 48" version="1.1">
     {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
     <title>Google-color</title>
     <desc>Created with Sketch.</desc>
@@ -39,7 +39,7 @@ export function gmailBlack() {
 
 export function linkedIn() {
   return (
-    <svg width="44px" height="40px" viewBox="0 0 44 40" version="1.1" >
+    <svg width="48px" height="48px" viewBox="0 0 44 40" version="1.1" >
     {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
     <title>LinkedIn-color</title>
     <desc>Created with Sketch.</desc>
@@ -103,7 +103,7 @@ export function github() {
 
 export function githubBlack() {
   return (
-    <svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" >
+    <svg width="48px" height="48px" viewBox="0 0 48 47" version="1.1" >
       {/* Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch */}
                                                                                                                      <title>Github-black</title>
     <desc>Created with Sketch.</desc>

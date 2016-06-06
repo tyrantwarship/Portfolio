@@ -2,6 +2,7 @@ $contactme-background-color: #847563;
 $contactme-header-color: #fff;
 
 .contactme-area {
+  position: relative;
   background-color: $contactme-background-color;
   padding-bottom: 80px;
   padding-top: 80px;
@@ -15,6 +16,10 @@ $contactme-header-color: #fff;
   h2 {
     margin-bottom: 80px;
   }
+}
+
+.badges-list {
+  margin-top: 20vh;
 }
 
 .contactme-badge {

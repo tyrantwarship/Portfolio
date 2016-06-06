@@ -43,6 +43,13 @@ li {
   color: $skillset-tip-color;
   margin: 2em 0;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.56);
+  }
+  a:visited {
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 1400px) {

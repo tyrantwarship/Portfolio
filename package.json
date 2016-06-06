@@ -2,7 +2,11 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "description": "My personal portfolio",
-  "scripts": {},
+    "scripts": {
+        "dev": "node ./server.js",
+        "dist": "webpack-dev-server --devtool eval --progress --colors",
+        "deploy": "NODE_ENV=production webpack -p --devtool cheap-module-source-map --progress"
+    },
   "author": "tyrantwarship",
   "license": "ISC",
   "dependencies": {

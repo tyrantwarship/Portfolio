@@ -2,7 +2,7 @@ import React from 'react';
 
 export function gmail() {
   return (
-    <svg width="48px" height="48px" viewBox="0 0 47 48" version="1.1">
+    <svg className="contactme-svg" viewBox="0 0 47 48" version="1.1">
     {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
     <title>Google-color</title>
     <desc>Created with Sketch.</desc>
@@ -23,7 +23,7 @@ export function gmail() {
 
 export function gmailBlack() {
   return (
-    <svg width="48px" height="49px" viewBox="0 0 48 49" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 48 49" version="1.1" >
       {/* Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch */}
       <title>Google-black</title>
       <desc>Created with Sketch.</desc>
@@ -39,7 +39,7 @@ export function gmailBlack() {
 
 export function linkedIn() {
   return (
-    <svg width="48px" height="48px" viewBox="0 0 44 40" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 44 40" version="1.1" >
     {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
     <title>LinkedIn-color</title>
     <desc>Created with Sketch.</desc>
@@ -55,7 +55,7 @@ export function linkedIn() {
 
 export function linkedInBlack() {
   return (
-    <svg width="44px" height="40px" viewBox="0 0 44 40" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 44 40" version="1.1" >
       {/* Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch */}
       <title>LinkedIn-black</title>
       <desc>Created with Sketch.</desc>
@@ -71,7 +71,7 @@ export function linkedInBlack() {
 
 export function codepen() {
   return (
-    <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 48 48" version="1.1" >
     {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
     <title>Codepen-color</title>
     <desc>Created with Sketch.</desc>
@@ -87,7 +87,7 @@ export function codepen() {
 
 export function github() {
   return (
-    <svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 48 47" version="1.1" >
       {/*<!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->*/}
       <title>Github-color</title>
       <desc>Created with Sketch.</desc>
@@ -103,7 +103,7 @@ export function github() {
 
 export function githubBlack() {
   return (
-    <svg width="48px" height="48px" viewBox="0 0 48 47" version="1.1" >
+    <svg className="contactme-svg" viewBox="0 0 48 47" version="1.1" >
       {/* Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch */}
                                                                                                                      <title>Github-black</title>
     <desc>Created with Sketch.</desc>

@@ -47,7 +47,9 @@ const featured_skillset = [
   <SVGS.nodejs />,
   <SVGS.grunt />,
   <SVGS.bower />,
-  <SVGS.angular />
+  <SVGS.angular />,
+  <SVGS.git />,
+  <SVGS.ubuntu />
 ];
 
 // this is a test
@@ -55,7 +57,7 @@ const featured_skillset = [
 
 const formated_skillset = featured_skillset.map((badge, i) => {
   return (
-    <li key={i} className="col-xs-6 col-sm-4 col-md-3 skillset-badge">
+    <li key={i} className="col-xs-6 col-sm-3 col-md-3 skillset-badge">
       {badge}
     </li>
   );

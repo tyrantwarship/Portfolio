@@ -7,6 +7,7 @@ $skillset-tip-color: rgba(255, 255, 255, .56);
   background-color: $skillset-background-color;
   padding-bottom: 9em;
   padding-top: 9em;
+  min-height: 100vh;
 
   h1 {
     color: $skillset-header-color;
@@ -72,7 +73,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .skillset-area {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .skillset-badges-list {
@@ -83,8 +84,20 @@ li {
     max-width: 12em;
   }
 
-.devicon-d3js-plain {
-  font-size: 10em;
+  .devicon-d3js-plain {
+    font-size: 10em;
+  }
+
 }
-  
+
+@media screen and (min-width: 2560px) {
+  .skillset-area {
+    h1 {
+      font-size: 10em;
+    }
+  }
+
+  .skillset-tip {
+    font-size: 5em;
+  }
 }

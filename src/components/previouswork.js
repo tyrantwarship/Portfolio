@@ -80,7 +80,6 @@ export default () => {
       </ul>
       <Carousel />
       <h5 className="previouswork-tip">Note: Click for project page</h5>
-      <h5 className="previouswork-tip">Note: For more of my work check my github/codepen page</h5>
     </div>
   );
 }

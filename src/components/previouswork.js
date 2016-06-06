@@ -70,14 +70,6 @@ export default () => {
       <h1>Previous Work
         <small>See some of the projects I've worked on</small>
       </h1>
-      <ul className="list-inline previouswork-list">
-        {/* {
-        formated_previouswork
-        } */}
-        {/* <li>
-        <img src="http://placehold.it/300x200"/>
-        </li> */}
-      </ul>
       <Carousel />
       <h5 className="previouswork-tip">Note: Click for project page</h5>
     </div>

@@ -41,21 +41,65 @@ $previouswork-tip-color: #777;
 }
 
 .item img {
-  max-width: 360px;
-  min-width: 360px;
+  max-width: 320px;
+  min-width: 320px;
   max-height: 350px;
   min-height: 350px;
 
 }
 
 .caption-description {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.55);
   width: 100%;
-  left: 0; 
+  left: 0;
 
   p {
     font-size: 2em;
     margin-left: 2px;
     margin-right: 2px;
   }
+}
+
+@media screen and (min-width: 425px) {
+  #myCarousel {
+    img {
+      margin: 0 auto;
+    }
+  }
+  .simon-item {
+    background: #324d5b;
+  }
+  .wiki-item {
+    background: #ca5c5c;
+  }
+  .recipe-item {
+    background: #494a5e;
+  }
+  .calc-item {
+    background: #454136;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #myCarousel {
+    height: 600px;
+    max-height: 600px;
+    a {
+      /* background: #847563; */
+    }
+    img {
+      margin: 0 auto;
+      height: 100%;
+      width: auto;
+    }
+    .item img {
+      max-width: 600px;
+      min-width: 600px;
+      max-height: 600px;
+      min-height: 600px;
+
+    }
+  }
+
 }

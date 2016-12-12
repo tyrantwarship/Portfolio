@@ -11,7 +11,6 @@ export default () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a href="#" className="navbar-brand menu-top-option">Top</a>
         </div>
 
         <div className="collapse navbar-collapse" id="navbar-collapse-menu">

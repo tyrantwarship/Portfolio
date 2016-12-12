@@ -5,6 +5,7 @@ const formated_previouswork = previouswork.map((value, index) => <li className="
 
 const Carousel = () => {
   return (
+    <div className="container">
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -60,6 +61,7 @@ const Carousel = () => {
         <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span className="sr-only">Next</span>
       </a>
+    </div>
     </div>
   );
 };

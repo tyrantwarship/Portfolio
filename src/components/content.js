@@ -1,16 +1,19 @@
 import React from 'react';
 import AboutMe from './aboutme';
 import SkillSet from './skillset';
-import PreviousWork from './previouswork';
+import PWork from './previouswork';
 import ContactMe from './contactme';
 import Footer from './footer';
+import Elm from 'react-elm-components';
+import { PreviousWork } from './PreviousWork';
 
 export default () => {
     return (
       <div className="content container">
         <AboutMe />
         <SkillSet />
-        <PreviousWork />
+        <PWork />
+        <Elm src={PreviousWork} />
         <ContactMe />
         <Footer />
       </div>

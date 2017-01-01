@@ -2,17 +2,18 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "description": "My personal portfolio",
-    "scripts": {
-        "dev": "node ./server.js",
-        "dist": "webpack-dev-server --devtool eval --progress --colors",
-        "deploy": "NODE_ENV=production webpack -p --devtool cheap-module-source-map --progress"
-    },
+  "scripts": {
+    "dev": "node ./server.js",
+    "dist": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p --devtool cheap-module-source-map --progress"
+  },
   "author": "tyrantwarship",
   "license": "ISC",
   "dependencies": {
     "bootstrap-webpack": "0.0.5",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "react-elm-components": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.20",
@@ -23,6 +24,7 @@
     "babel-preset-stage-0": "^6.0.15",
     "bootstrap": "^3.3.6",
     "css-loader": "^0.23.1",
+    "elm-webpack-loader": "^4.1.1",
     "eslint": "^2.8.0",
     "eslint-plugin-react": "^3.16.1",
     "exports-loader": "^0.6.3",

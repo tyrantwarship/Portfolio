@@ -1,7 +1,7 @@
 import React from 'react';
 
-const previouswork = [1,2,3,1,2,3];
-const formated_previouswork = previouswork.map((value, index) => <li className="col-xs-12 col-sm-6 col-md-4" key={index}><img src="http://placehold.it/300x200" className="img-rounded"/></li>);
+// const previouswork = [1,2,3,1,2,3];
+// const formated_previouswork = previouswork.map((value, index) => <li className="col-xs-12 col-sm-6 col-md-4" key={index}><img src="http://placehold.it/300x200" className="img-rounded"/></li>);
 
 const Carousel = () => {
   return (

@@ -17,8 +17,8 @@ main =
             ]
             [ carouselIndicators
             , carouselInner
-            , carouselControlLeft
-            , carouselControlRight
+            , carouselControl "left" "prev" "Previous"
+            , carouselControl "right" "next" "Next"
             ]
         ]
 
@@ -64,6 +64,23 @@ carouselItem =
                 , p [] [ text """Web application based on the timeless game, "Simon Says". Built with React and Sass.""" ]
                 ]
             ]
+        ]
+
+
+carouselControl : String -> String -> String -> Html.Html msg
+carouselControl direction dataSlide displayText =
+    a
+        [ class <| direction ++ " carousel-control"
+        , href "#myCarousel"
+        , attribute "role" "button"
+        , attribute "data-slide" dataSlide
+        ]
+        [ span
+            [ class <| "glyphicon glyphicon-chevron-" ++ direction
+            , attribute "aria-hidden" "true"
+            ]
+            []
+        , span [ class "sr-only" ] [ text displayText ]
         ]
 
 

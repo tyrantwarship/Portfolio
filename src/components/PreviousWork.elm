@@ -1,6 +1,6 @@
 module PreviousWork exposing (main)
 
-import Html exposing (div, text, ol, li, a, img, h3, p, span)
+import Html exposing (div, text, ol, li, a, img, h3, p, span, h1, small, h5)
 import Html.Attributes exposing (class, id, attribute, target, href, alt, src)
 
 
@@ -9,6 +9,21 @@ import Html.Attributes exposing (class, id, attribute, target, href, alt, src)
 
 main : Html.Html msg
 main =
+    div
+        [ class "row previouswork-area text-center"
+        , id "previouswork"
+        ]
+        [ h1 []
+            [ text "Previous Work"
+            , small [] [ text "See some of the projects I've worked on" ]
+            ]
+        , carouselView
+        , h5 [ class "previouswork-tip" ] [ text "Note: Click for project page" ]
+        ]
+
+
+carouselView : Html.Html msg
+carouselView =
     div [ class "container" ]
         [ div
             [ id "myCarousel"

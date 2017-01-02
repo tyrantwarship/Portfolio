@@ -15,16 +15,16 @@ main =
             , class "carousel slide"
             , attribute "data-ride" "carousel"
             ]
-            [ carouselIndicators
-            , carouselInner
-            , carouselControl "left" "prev" "Previous"
-            , carouselControl "right" "next" "Next"
+            [ carouselIndicatorsView
+            , carouselInnerView
+            , carouselControlView "left" "prev" "Previous"
+            , carouselControlView "right" "next" "Next"
             ]
         ]
 
 
-carouselIndicators : Html.Html msg
-carouselIndicators =
+carouselIndicatorsView : Html.Html msg
+carouselIndicatorsView =
     ol [ class "carousel-indicators" ] <|
         List.map
             (\( className, slide ) ->
@@ -38,37 +38,53 @@ carouselIndicators =
             [ ( "active", 0 ), ( "", 1 ), ( "", 2 ), ( "", 3 ) ]
 
 
-carouselInner : Html.Html msg
-carouselInner =
+carouselInnerView : Html.Html msg
+carouselInnerView =
     div
         [ class "carousel-inner"
         , attribute "role" "listbox"
         ]
-        [ carouselItem ]
+    <|
+        List.map (\carouselItem -> carouselItemView carouselItem) carouselItems
 
 
-carouselItem : Html.Html msg
-carouselItem =
-    div [ class "item active simon-item" ]
+type alias CarouselItem =
+    { className : String
+    , hrefLink : String
+    , imgAlt : String
+    , imgSrc : String
+    , titleText : String
+    , descText : String
+    }
+
+
+carouselItems : List CarouselItem
+carouselItems =
+    [ CarouselItem "simon-item" "http://tyrantwarship.github.io/FCC-SimonSays-Zipline" "simon-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png" "Simon Says" """Web application based on the timeless game, "Simon Says". Built with React and Sass.""" ]
+
+
+carouselItemView : CarouselItem -> Html.Html msg
+carouselItemView { className, hrefLink, imgAlt, imgSrc, titleText, descText } =
+    div [ class <| "item active " ++ className ]
         [ a
             [ target "_blank"
-            , href "http://tyrantwarship.github.io/FCC-SimonSays-Zipline"
+            , href hrefLink
             ]
             [ img
-                [ alt "simon-project"
-                , src "https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png"
+                [ alt imgAlt
+                , src imgSrc
                 ]
                 []
             , div [ class "carousel-caption caption-description" ]
-                [ h3 [] [ text "Simon Says" ]
-                , p [] [ text """Web application based on the timeless game, "Simon Says". Built with React and Sass.""" ]
+                [ h3 [] [ text titleText ]
+                , p [] [ text descText ]
                 ]
             ]
         ]
 
 
-carouselControl : String -> String -> String -> Html.Html msg
-carouselControl direction dataSlide displayText =
+carouselControlView : String -> String -> String -> Html.Html msg
+carouselControlView direction dataSlide displayText =
     a
         [ class <| direction ++ " carousel-control"
         , href "#myCarousel"
@@ -81,38 +97,4 @@ carouselControl direction dataSlide displayText =
             ]
             []
         , span [ class "sr-only" ] [ text displayText ]
-        ]
-
-
-carouselControlLeft : Html.Html msg
-carouselControlLeft =
-    a
-        [ class "left carousel-control"
-        , href "#myCarousel"
-        , attribute "role" "button"
-        , attribute "data-slide" "prev"
-        ]
-        [ span
-            [ class "glyphicon glyphicon-chevron-left"
-            , attribute "aria-hidden" "true"
-            ]
-            []
-        , span [ class "sr-only" ] [ text "Previous" ]
-        ]
-
-
-carouselControlRight : Html.Html msg
-carouselControlRight =
-    a
-        [ class "right carousel-control"
-        , href "#myCarousel"
-        , attribute "role" "button"
-        , attribute "data-slide" "next"
-        ]
-        [ span
-            [ class "glyphicon glyphicon-chevron-right"
-            , attribute "aria-hidden" "true"
-            ]
-            []
-        , span [ class "sr-only" ] [ text "Next" ]
         ]

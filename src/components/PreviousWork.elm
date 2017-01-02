@@ -60,12 +60,16 @@ type alias CarouselItem =
 
 carouselItems : List CarouselItem
 carouselItems =
-    [ CarouselItem "simon-item" "http://tyrantwarship.github.io/FCC-SimonSays-Zipline" "simon-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png" "Simon Says" """Web application based on the timeless game, "Simon Says". Built with React and Sass.""" ]
+    [ CarouselItem "active simon-item" "http://tyrantwarship.github.io/FCC-SimonSays-Zipline" "simon-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-SimonSays-Zipline/master/demo-first.png" "Simon Says" """Web application based on the timeless game, "Simon Says". Built with React and Sass."""
+    , CarouselItem "wiki-item" "http://tyrantwarship.github.io/FCC-WikiSearch-Zipline" "wikipedia-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-WikiSearch-Zipline/master/demo-first.png" "Wikipedia Searcher" "Search Wikipedia with this beautifully designed searcher. Implements the wikipedia API and built with Angular and Sass."
+    , CarouselItem "recipe-item" "http://tyrantwarship.github.io/FCC-RecipeBox-Zipline" "recipebox-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-RecipeBox-Zipline/master/preview1.png" "Recipe Box" "Keep track of all your recipes with this browser-memory persistent Recipe Box. Built with React and Sass."
+    , CarouselItem "calc-item" "http://codepen.io/tyrantwarship/full/WreQyw/" "calculator-project" "https://raw.githubusercontent.com/tyrantwarship/FCC-Calculator-Zipline/master/preview.png" "Calculator" "Do mathetical calculations with whole or decimal values, on a visually pleasing calculator that works on all browsers. Built with Angular and Sass."
+    ]
 
 
 carouselItemView : CarouselItem -> Html.Html msg
 carouselItemView { className, hrefLink, imgAlt, imgSrc, titleText, descText } =
-    div [ class <| "item active " ++ className ]
+    div [ class <| "item " ++ className ]
         [ a
             [ target "_blank"
             , href hrefLink

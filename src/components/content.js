@@ -1,7 +1,6 @@
 import React from 'react';
 import AboutMe from './aboutme';
 import SkillSet from './skillset';
-import PWork from './previouswork';
 import ContactMe from './contactme';
 import Footer from './footer';
 import Elm from 'react-elm-components';
@@ -12,7 +11,6 @@ export default () => {
       <div className="content container">
         <AboutMe />
         <SkillSet />
-        <PWork />
         <Elm src={PreviousWork} />
         <ContactMe />
         <Footer />

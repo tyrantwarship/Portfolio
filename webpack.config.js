@@ -1,5 +1,14 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+var VENDOR_LIBS = [
+    "bootstrap-webpack",
+    "react",
+    "react-dom",
+    "react-elm-components",
+    "bootstrap"
+];
 
 module.exports = {
     devtool: 'eval',
@@ -7,30 +16,37 @@ module.exports = {
         modulesDirectories: ['node_modules'],
         extensions: ['', '.js', '.elm']
     },
-    entry: [
-        'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/only-dev-server',
-        './src/index'
-    ],
+    entry: {
+        bundle: './src/index',
+        vendor: VENDOR_LIBS
+    },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/static/'
+        filename: '[name].js',
+        // publicPath: 'static/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['vendor']
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+        })
     ],
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                include: path.join(__dirname, 'src'),
+                // include: path.join(__dirname, 'src'),
                 exclude: [/elm-stuff/, /node_modules/],
                 loaders: ['react-hot', 'babel']
             },
             {
                 test: /\.elm$/,
-                exclude: [/elm-stuff/, /node_mudules/],
+                exclude: [/elm-stuff/, /node_modules/],
                 loader: 'elm-webpack'
             },
             {

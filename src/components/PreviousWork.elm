@@ -13,7 +13,7 @@ main =
         [ class "row previouswork-area text-center"
         , id "previouswork"
         ]
-        [ h1 []
+        [ h1 [ class "previouswork-header" ]
             [ text "Previous Work"
             , small [] [ text "See some of the projects I've worked on" ]
             ]

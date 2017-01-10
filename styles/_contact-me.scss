@@ -51,6 +51,12 @@ $contactme-header-color: #fff;
   }
 }
 
+@media screen and (min-width: 1400px) {
+    .contactme-header {
+        font-size: 7em;
+    }
+}
+
 @media screen and (min-width: 2560px) {
   .contactme-area {
     h1 {

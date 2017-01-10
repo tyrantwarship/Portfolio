@@ -12,7 +12,7 @@ const contactmethods = [
 export default () => {
   return (
     <div className="row contactme-area text-center" id="contactme">
-      <h1>Contact Me</h1>
+      <h1 className="contactme-header">Contact Me</h1>
       <h2>Got an Idea? Lets make it happen!</h2>
       <ul className="list-inline badges-list">
         {

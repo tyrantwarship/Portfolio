@@ -68,7 +68,7 @@ const formated_skillset = featured_skillset.map((badge, i) => {
 export default () => {
   return (
     <div className="row skillset-area" id="skillset">
-      <h1 className="text-center">Skillset <small>My ever growing list...</small></h1>
+      <h1 className="text-center skillset-header">Skillset <small>My ever growing list...</small></h1>
       <ul className="skillset-badges-list row text-center">
         {formated_skillset}
       </ul>

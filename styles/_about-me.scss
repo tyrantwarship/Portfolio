@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
             #aboutme {
-              min-height: 100vh;
-              // these should be only for bigger monitors
-              // padding-top : 14rem;
-              // padding-bottom: 1rem;
+              /* min-height: 100vh; */
             }
 
             .about-me-header {
               display: block;
-              margin-top: .5em;
+              margin-top: 2em;
               width: 100%;
 
               small {
@@ -25,9 +22,10 @@
             .about-me-paragraph {
               font-family: $font-secondary-family;
               font-size: 2.5em;
-              margin-bottom: 10em;
+              margin-bottom: 9em;
               margin-top: 2em;
               text-align: center;
+              line-height: 1.5em;
             }
 
             @media screen and (min-width: 1400px) {

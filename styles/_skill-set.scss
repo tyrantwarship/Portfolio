@@ -7,7 +7,7 @@ $skillset-tip-color: rgba(255, 255, 255, .56);
   background-color: $skillset-background-color;
   padding-bottom: 9em;
   padding-top: 9em;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   h1 {
     color: $skillset-header-color;
@@ -69,11 +69,12 @@ li {
 
 @media screen and (min-width: 1024px) {
   .skillset-area {
-    min-height: 100vh;
+    // min-height: 100vh;
   }
 
   .skillset-badges-list {
-    margin-top: 20em;
+    // margin-top: 20em;
+    margin-top: 10em;
   }
 
   .skillset-svg {
